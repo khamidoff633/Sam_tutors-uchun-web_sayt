@@ -17,18 +17,12 @@ import { motion, AnimatePresence } from "motion/react";
 // --- CUSTOM COMPONENTS ---
 
 const SamTutorsLogo = ({ className = "w-10 h-10" }: { className?: string }) => (
-  <div className={`${className} bg-black rounded-lg flex items-center justify-center p-1 shadow-lg border border-white/10 group-hover:bg-zinc-900 transition-colors duration-300`}>
-
-    <svg viewBox="0 0 100 100" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="10" y="10" width="80" height="80" rx="4" stroke="#fbbf24" strokeWidth="1" opacity="0.4" />
-      <g transform="translate(0, 5)">
-        <text x="38" y="65" fontSize="52" fontWeight="800" fill="white" textAnchor="middle" fontFamily="serif" className="select-none">S</text>
-        <text x="62" y="65" fontSize="52" fontWeight="800" fill="#fbbf24" textAnchor="middle" fontFamily="serif" className="select-none">T</text>
-      </g>
-      
-      <circle cx="50" cy="22" r="2.5" fill="#fbbf24" />
-      <path d="M25 78H75" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.6" />
-    </svg>
+  <div className={`${className} bg-zinc-900 rounded-full overflow-hidden flex items-center justify-center shadow-lg border-2 border-yellow-400/20 group-hover:border-yellow-400 transition-all duration-300`}>
+    <img 
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyi9X7yHC69fg-biLuYD2P4GPqJR1ODISmqAjm-ZPvf8_B83Vv" 
+      alt="Sam Tutors Logo" 
+      className="w-full h-full object-cover"
+    />
   </div>
 );
 
